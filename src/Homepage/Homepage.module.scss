@@ -1,0 +1,18 @@
+@import "styles/breakpoints.scss";
+@import "styles/variables.scss";
+
+.companyLogo {
+  height: 35px;
+}
+
+.greetings {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .horizontalLine {
+    height: 2px;
+    width: 145px;
+    background-color: var(--arctic-color);
+  }
+}
