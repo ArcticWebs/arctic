@@ -28,7 +28,11 @@ const Homepage = () => {
           >
             <BsLinkedin />
           </a>
-          <a className={styles.navIcon} href="">
+          <a
+            className={styles.navIcon}
+            href="/assets/AnnaKiedrowska.pdf"
+            download
+          >
             <BsDownload />
           </a>
         </div>
@@ -61,11 +65,14 @@ const Homepage = () => {
             </div>
             <div className={styles.tile}>
               <h4>Contact</h4>
-              <a className={styles.contactLink} href="">
+              <a className={styles.contactLink} href="tel:+48502932625">
                 <BsTelephone />
                 +48 502 932 625
               </a>
-              <a className={styles.contactLink}>
+              <a
+                href="mailto:kiedrowska.ania@gmail.com"
+                className={styles.contactLink}
+              >
                 <BsEnvelope />
                 kiedrowska.ania@gmail.com
               </a>
