@@ -99,9 +99,17 @@
   }
 }
 
+.techIcons {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 25px;
+  font-size: 20px;
+}
+
 .tileBox {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 
@@ -125,6 +133,14 @@
   gap: 10px;
 
   font-size: 14px;
+
+  @include media(">=tablet") {
+    width: 190px;
+  }
+
+  @include media(">=laptop") {
+    width: 300px;
+  }
 }
 
 .contactLink {

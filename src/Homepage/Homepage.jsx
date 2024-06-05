@@ -9,6 +9,14 @@ import {
   BsTelephone,
   BsEnvelope,
 } from "react-icons/bs";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiSass,
+  SiFigma,
+} from "react-icons/si";
 
 const Homepage = () => {
   return (
@@ -50,13 +58,19 @@ const Homepage = () => {
           </p>
           <p>
             My strength is the ability to organize tasks, work with scattered
-            data and quick adaptation to a new technical environment.
+            data and quick adaptation to a new technical environment. In every
+            project I value good design and pay attention to the smallest
+            details.
           </p>
-          <p>
-            with passion, aesthetic sense and enthusiasm for work. My strength
-            is the ability to organize tasks, work with scattered data and quick
-            adaptation to a new technical environment.
-          </p>
+
+          <div className={styles.techIcons}>
+            <SiHtml5 />
+            <SiCss3 />
+            <SiJavascript />
+            <SiReact />
+            <SiSass />
+            <SiFigma />
+          </div>
           <div className={styles.tileBox}>
             <div className={styles.tile}>
               <h4>Projects</h4>
