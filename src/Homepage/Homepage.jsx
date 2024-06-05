@@ -59,9 +59,13 @@ const Homepage = () => {
           <div className={styles.tileBox}>
             <div className={styles.tile}>
               <h4>Projects</h4>
-              <a href="">Lanthan Electronics</a>
-              <a href="">Budget calculator</a>
-              <a href="">Currency calculator</a>
+              <a href="https://lanthan-electronics.com/">Lanthan Electronics</a>
+              <a href="https://luminous-griffin-0f56ed.netlify.app/">
+                Budget calculator
+              </a>
+              <a href="https://super-malasada-fcd6cd.netlify.app/">
+                Currency calculator
+              </a>
             </div>
             <div className={styles.tile}>
               <h4>Contact</h4>
