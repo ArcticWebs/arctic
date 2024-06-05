@@ -1,6 +1,7 @@
 import styles from "./Homepage.module.scss";
 import logo from "assets/LogoArctic.png";
 import photo from "assets/Anna.png";
+import resume from "assets/AnnaKiedrowska.pdf";
 import {
   BsGithub,
   BsLinkedin,
@@ -30,8 +31,8 @@ const Homepage = () => {
           </a>
           <a
             className={styles.navIcon}
-            href="/assets/AnnaKiedrowska.pdf"
-            download
+            href={resume}
+            download="Anna Kiedrowska CV"
           >
             <BsDownload />
           </a>

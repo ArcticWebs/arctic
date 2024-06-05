@@ -5,16 +5,26 @@
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .companyLogo {
-    height: 35px;
+    height: 25px;
+
+    @include media(">=laptop") {
+      height: 35px;
+    }
   }
 
   .linkBox {
     display: flex;
-    gap: 70px;
+    gap: 10px;
 
-    font-size: 25px;
+    font-size: 20px;
+
+    @include media(">=laptop") {
+      font-size: 25px;
+      gap: 70px;
+    }
   }
 
   .navIcon {
@@ -24,30 +34,53 @@
 
 .heading {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 30px;
 
   img {
-    height: 500px;
-    margin: 20px;
+    width: 300px;
+
+    @include media(">=laptop") {
+      width: 350px;
+    }
+  }
+
+  @include media(">=tablet") {
+    height: calc(100vh - 105px);
+    margin-top: 0;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .aboutMe {
-  width: 55%;
-  margin-top: 50px;
-
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 30px;
 
   text-align: justify;
+
+  @include media(">=tablet") {
+    width: 55%;
+  }
 }
 
 .greetings {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+
+  @include media(">=tablet") {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
 
   .horizontalLine {
     height: 2px;
@@ -58,15 +91,27 @@
 
 .boldTxt {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--arctic-color);
+
+  @include media(">=laptop") {
+    font-size: 24px;
+  }
 }
 
 .tileBox {
   width: 100%;
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  gap: 40px;
+
+  @include media(">=tablet") {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .tile {
