@@ -28,12 +28,19 @@ const Homepage = () => {
           alt="Arctic Webs company logo"
         />
         <div className={styles.linkBox}>
-          <a className={styles.navIcon} href="https://github.com/ArcticWebs">
+          <a
+            className={styles.navIcon}
+            href="https://github.com/ArcticWebs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsGithub />
           </a>
           <a
             className={styles.navIcon}
             href="https://www.linkedin.com/in/anna-kiedrowska-98891b230/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <BsLinkedin />
           </a>
